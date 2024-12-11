@@ -12,6 +12,8 @@ public class Program {
         //Instanciando o SellerDao com factory
         SellerDao sellerDao = DaoFactory.createSellerDao();
 
+
+        System.out.println("=== TESTE 1: vendedor encontrado pelo ID ===");
         Seller seller = sellerDao.findById(3);
         System.out.println(seller);
     }
