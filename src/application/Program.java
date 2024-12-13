@@ -49,5 +49,11 @@ public class Program {
         seller.setName("João");
         sellerDao.update(seller);
         System.out.println("Atualizado com sucesso!");
+
+        System.out.println();
+
+        System.out.println("=== TESTE 6: Deletar vendedor ===");
+        sellerDao.deleteById(11);
+        System.out.println("Deletado com sucesso!");
     }
 }
