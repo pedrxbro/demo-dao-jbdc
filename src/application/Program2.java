@@ -21,5 +21,9 @@ public class Program2 {
         Department dep = departmentDao.findById(newDepartment.getId());
         System.out.println("Departamento pelo id = " + dep.getId() );
         System.out.println(dep);
+
+        System.out.println("Teste 3 == Deletando pelo id ===");
+        departmentDao.deleteById(6);
+        System.out.println("Deletado com sucesso!");
     }
 }
