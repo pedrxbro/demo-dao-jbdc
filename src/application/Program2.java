@@ -22,8 +22,16 @@ public class Program2 {
         System.out.println("Departamento pelo id = " + dep.getId() );
         System.out.println(dep);
 
+        System.out.println();
+
         System.out.println("Teste 3 == Deletando pelo id ===");
         departmentDao.deleteById(6);
         System.out.println("Deletado com sucesso!");
+
+        System.out.println("Teste 4 == Atualizando departamento ===");
+        dep = departmentDao.findById(7);
+        dep.setName("Human Resources");
+        departmentDao.update(dep);
+        System.out.println("Atualizado com sucesso!");
     }
 }
