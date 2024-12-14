@@ -5,6 +5,8 @@ import model.dao.DepartmentDao;
 import model.entities.Department;
 import model.entities.Seller;
 
+import java.util.List;
+
 public class Program2 {
 
     public static void main(String[] args){
@@ -33,5 +35,14 @@ public class Program2 {
         dep.setName("Human Resources");
         departmentDao.update(dep);
         System.out.println("Atualizado com sucesso!");
+
+        System.out.println();
+
+        System.out.println("Teste 5 == Listando departamentos ===");
+        List<Department> deps = departmentDao.findAll();
+        for(Department d : deps){
+            System.out.println(d);
+        }
+
     }
 }
